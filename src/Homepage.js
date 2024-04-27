@@ -8,7 +8,7 @@ const HomePage = () => {
           Welcome to My Portfolio
         </h1>
         <p className="text-gray-light text-lg mb-8">
-          Hi there! I'm [Your Name], a passionate web developer.
+          Hi there! I'm Hriday, a passionate web developer.
         </p>
         <a
           href="/resume.pdf"
