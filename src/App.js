@@ -1,17 +1,24 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom'; // Import HashRouter
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './HomePage';
 import ProjectsPage from './ProjectsPage';
 import ContactPage from './ContactPage';
+import Header from './Header';
 
-const App = () => {
+function App() {
   return (
-    <HashRouter> 
-      <Route exact path="/" component={HomePage} />
-      <Route path="/projects" component={ProjectsPage} />
-      <Route path="/contact" component={ContactPage} />
-    </HashRouter> 
+    <Router>
+      <div className='App'>
+        <Header/>
+        <Routes>
+        <Route exact path="/" element={<HomePage/>} />
+        <Route path="/projects" element={<ProjectsPage/>} />
+        <Route path="/contact" element={<ContactPage/>} />
+        </Routes>
+        </div>
+    </Router>
   );
-};
+}
 
 export default App;
+

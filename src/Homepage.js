@@ -11,7 +11,7 @@ const HomePage = () => {
           Hi there! I'm Hriday, a passionate web developer.
         </p>
         <a
-          href="/resume.pdf"
+          href="www.google.com"
           className="bg-yellow-dark hover:bg-yellow-light text-gray-dark font-semibold py-2 px-4 rounded inline-block"
         >
           Download Resume (PDF)
